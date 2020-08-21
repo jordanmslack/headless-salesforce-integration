@@ -13,13 +13,6 @@
 			justify-content: center;
 		}
 
-		.boxed {
-		  width:100%;
-		  max-width: 1440px!important;
-		  margin:0 auto;
-		  padding: 40px;
-		}
-
 		#feedback {
 			padding:20px;
 			max-width:640px;
@@ -69,15 +62,24 @@
 		  margin:0 auto 60px auto;
 		}
 
-		.star-rating input { display:none; }
+		.star-rating input {
+			display:none;
+
+		}
 		.star-rating label {
 			color:#ccc;
 			cursor:pointer;
 			font-size:36px;
 			margin-right:3px;
 		}
-		.star-rating :checked ~ label { color:#2b2a2a; }
-		.star-rating label:hover, .star-rating label:hover ~ label { color:#2b2a2a; }
+
+		.star-rating :checked ~ label {
+			color:#2b2a2a;
+		}
+
+		.star-rating label:hover, .star-rating label:hover ~ label {
+			color:#2b2a2a;
+		}
 
 	</style>
 
@@ -114,10 +116,10 @@
 				</div>
 		</form>
 
-
 	</div>
 
 	<div id="alert-message" class="flex-center"></div>
+
 <script>
 
 	function submitForm(event) {
