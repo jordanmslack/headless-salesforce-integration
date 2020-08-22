@@ -81,7 +81,7 @@ def post_lead():
                     'FirstName': data.get('first_name', ''),
                     'LastName': data.get('last_name', ''),
                     'Email': data.get('email', ''),
-                    'Company': data.get('email', ''),
+                    'Company': data.get('company', ''),
                     'LeadSource': 'Website',
                 }
             )
